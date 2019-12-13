@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="default" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.ultraq.net.nz/thymeleaf/layout ">
+<head>
+    <title>Branch</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div layout:fragment="content" class="row">
+    <div class="col-xs-8 col-md-8">
+        <h3>
+            <a href="/index" class="btn btn-primary"><span class="glyphicon glyphicon-plus-sign"></span>Add a new doctor to database</a>
+        </h3>
+        <h2>Doctor list taken out from the database</h2>
+        <div class="table-responsive">
+            <table class="table" id="product-table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name of doctor</th>
+                    <th>Nume specialziare</th>
+                    <th>Vechime doctor</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="data : ${doctors.branches}">
+                    <td th:text="${data.name_of_branch}"> </td>
+                    <td th:text="${data.seniority}"> </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
