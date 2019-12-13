@@ -19,7 +19,6 @@
             <table class="table" id="product-table">
                 <thead>
                 <tr>
-                    <th>da</th>
                     <th>Doctor id</th>
                     <th>Name</th>
                     <th>Branch name</th>
@@ -28,13 +27,11 @@
                 </thead>
                 <tr>
 
-                    <td th:text="${doctors}"> </td>
                 <tr th:each="doctors : ${doctors}">
                     <td th:text="${doctors.id}"> </td>
                     <td th:text="${doctors.name}"> </td>
                     <td th:text="${doctors.branch}"> </td>
                     <td th:text="${doctors.branches}"> </td>
-
 
                     </tr>
                </tr>

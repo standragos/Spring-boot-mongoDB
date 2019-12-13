@@ -12,6 +12,16 @@ public class Doctor {
     private String name;
     private String branch;
     private ArrayList<Branch> branches;
+    private ArrayList<Consultation> consultations;
+
+
+    public ArrayList<Consultation> getConsultations() {
+        return consultations;
+    }
+
+    public void setConsultations(ArrayList<Consultation> consultations) {
+        this.consultations = consultations;
+    }
 
     public void setBranch(String branch){
         this.branch=branch;

@@ -1,4 +1,4 @@
-package io.codementor.gtommee.rest_tutorial;
+package io.codementor.gtommee.rest_tutorial.Controllers;
 import io.codementor.gtommee.rest_tutorial.models.Branch;
 import io.codementor.gtommee.rest_tutorial.repositories.DoctorsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
