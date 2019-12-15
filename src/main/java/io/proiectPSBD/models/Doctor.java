@@ -1,4 +1,4 @@
-package io.codementor.gtommee.rest_tutorial.models;
+package io.proiectPSBD.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.ArrayList;
@@ -9,11 +9,21 @@ import java.util.List;
 public class Doctor {
     @Id
     private String id;
+
+    private int noOfConsultations;
+
     private String name;
     private String branch;
     private ArrayList<Branch> branches;
     private ArrayList<Consultation> consultations;
 
+    public int getNoOfConsultations() {
+        return noOfConsultations;
+    }
+
+    public void setNoOfConsultations(int noOfConsultations) {
+        this.noOfConsultations = noOfConsultations;
+    }
 
     public ArrayList<Consultation> getConsultations() {
         return consultations;

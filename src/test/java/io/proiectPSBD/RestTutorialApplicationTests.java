@@ -1,4 +1,4 @@
-package io.codementor.gtommee.rest_tutorial;
+package io.proiectPSBD;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

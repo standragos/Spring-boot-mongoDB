@@ -1,4 +1,4 @@
-package io.codementor.gtommee.rest_tutorial.models;
+package io.proiectPSBD.models;
 
 public class Detalii_pacient {
 

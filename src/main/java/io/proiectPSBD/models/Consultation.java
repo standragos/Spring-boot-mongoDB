@@ -1,13 +1,24 @@
-package io.codementor.gtommee.rest_tutorial.models;
+package io.proiectPSBD.models;
 
-import java.util.List;
 
 public class Consultation {
 
     private String nume_pacient;
     private String diagnostic;
     private Detalii_pacient detalii_pacient;
+    private static int counter=0;
 
+    public static int getCounter() {
+        return counter;
+    }
+
+    public static void setCounter(int counter) {
+        Consultation.counter = counter;
+    }
+
+    public Consultation(){
+        counter++;
+    }
     public Detalii_pacient getDetalii_pacient() {
         return detalii_pacient;
     }
